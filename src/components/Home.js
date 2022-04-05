@@ -1,14 +1,16 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Slider from './Slider'
-import Inner from './Inner'
+import Services from '../Services'
+import Card from '../components/Card'
 
 const Home = () => {
     return (
         <div>
             <Navbar/>
             <Slider/>
-            <Inner/>
+            <Services/>
+            <Card/>
         </div>
     )
 }

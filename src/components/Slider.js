@@ -4,6 +4,7 @@ import "keen-slider/keen-slider.min.css";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
+import { Container } from "@mui/material";
 
 
 export default function Slider() {
@@ -24,25 +25,21 @@ export default function Slider() {
       <div className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide number-slide1">
-            <Grid container>
-              <Grid item xs={2} md={2}></Grid>
-            </Grid>
-            <Grid container>
-              <Grid item xs={12} md={10}>
-                <Typography variant="h2">MCP Notebooks</Typography>
-                <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-                  For the Developers of Tomorrow
-                </Typography>
-                <Button variant="contained">Shop Now</Button>
+            <Container>
+              <Grid container justifyContent="flex-end">
+                <Grid item xs={10} md={6}>
+                  <Typography variant="h2">MCP Notebooks</Typography>
+                  <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+                    For the Developers of Tomorrow
+                  </Typography>
+                  <Button variant="contained">Shop Now</Button>
+                </Grid>
               </Grid>
-            </Grid>
+            </Container>
           </div>
           <div className="keen-slider__slide number-slide2">
-            <Grid container>
-              <Grid item xs={2} md={2}></Grid>
-            </Grid>
-            <Grid container>
-              <Grid item xs={12} md={10}>
+            <Grid container justifyContent="flex-end">
+              <Grid item xs={10} md={6}>
                 <Typography variant="h2">MCP Notebooks</Typography>
                 <Typography variant="h4" sx={{ fontWeight: "bold" }}>
                   Reach for greatness

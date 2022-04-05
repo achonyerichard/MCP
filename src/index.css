@@ -26,15 +26,19 @@ code {
   margin-top: 2rem;
 }
 
+
 .number-slide1 {
-  background-image: url("https: //images.pexels.com/photos/11297792/pexels-photo-11297792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/5560077/pexels-photo-5560077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
 .number-slide2 {
-  background: rgb(255, 75, 64);
-  background: linear-gradient(128deg,
-      rgba(255, 154, 63, 1) 0%,
-      rgba(255, 75, 64, 1) 100%);
+  background-image: url("https://images.pexels.com/photos/5553051/pexels-photo-5553051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .number-slide3 {
@@ -109,3 +113,32 @@ code {
   fill: rgba(255, 255, 255, 0.5);
 }
 
+.services{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  /* margin-left: 4rem;
+  margin-right: 4rem; */
+}
+
+.img_grid img{
+  width: 100%;
+  height: 100%;
+}
+.center_text{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width:500px) {
+  .grid2{
+    padding-top: 7rem !important;
+    padding-left: 3rem !important;
+  }
+  .grid3 {
+    padding-top: 7rem !important;
+    padding-right: 3rem !important;
+  }
+  
+}
