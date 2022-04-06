@@ -11,13 +11,13 @@ export default function ActionAreaCard() {
   return (
     <Container>
       <div className="center_text">
-        <Typography variant="h4" sx={{ mb: 7 }}>
+        <Typography variant="h4" sx={{ mb: 4 ,mt:9,}}>
           Our Products.
         </Typography>
       </div>
       <Grid container>
-        <Grid item xs={12} md={4}>
-          <Card sx={{ maxWidth: 345 }}>
+        <Grid item xs={12} md={6} lg={4} className="grid_items">
+          <Card sx={{ maxWidth: { lg: 345 } }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -39,7 +39,7 @@ export default function ActionAreaCard() {
           </Card>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: { lg: 345 } }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -61,7 +61,7 @@ export default function ActionAreaCard() {
           </Card>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: { lg: 345 } }}>
             <CardActionArea>
               <CardMedia
                 component="img"

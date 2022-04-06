@@ -33,7 +33,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed" sx={{ zIndex: "modal" }}>
       <Container maxWidth="xl">
         <Box>
           {" "}
@@ -43,14 +43,16 @@ const ResponsiveAppBar = () => {
               ml: { lg: "20", sm: "10", md: "20" },
             }}
           >
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-            >
-              MCP
-            </Typography>
+            <Link className="link" to="/">
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+              >
+                MCP
+              </Typography>
+            </Link>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
@@ -83,7 +85,7 @@ const ResponsiveAppBar = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                    <Typography  textAlign="center">{page}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -109,7 +111,7 @@ const ResponsiveAppBar = () => {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-              <Link to="/about" >
+              <Link to="/about" className="link">
                 <Typography>About Us</Typography>
               </Link>
             </Box>
